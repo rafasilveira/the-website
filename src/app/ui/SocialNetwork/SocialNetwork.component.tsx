@@ -25,9 +25,15 @@ export function SocialNetwork({ kind }: { kind: Network }) {
   return (
     <a
       href={href}
-      className="relative rounded-full p-4 mx-2 transition hover:bg-stone-950"
+      className="relative rounded-full p-4 mx-2 transition hover:bg-stone-950 dark:hover:bg-stone-150"
     >
-      <Image src={icon} width="24" height="24" alt={kind} className="invert" />
+      <Image
+        src={icon}
+        width="24"
+        height="24"
+        alt={kind}
+        className="dark:invert"
+      />
     </a>
   );
 }
